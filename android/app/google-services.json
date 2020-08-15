@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "786166380225",
+    "firebase_url": "https://buy-it-7ac75.firebaseio.com",
+    "project_id": "buy-it-7ac75",
+    "storage_bucket": "buy-it-7ac75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786166380225:android:4a70c5c481e97c617f4640",
+        "android_client_info": {
+          "package_name": "com.essammy.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786166380225-2j0oob26r8u7tj5v03fq5j0usdk3h2ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-h3EwHLtRgLxWrIMupv4qXYebhLU9p4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786166380225-2j0oob26r8u7tj5v03fq5j0usdk3h2ca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
