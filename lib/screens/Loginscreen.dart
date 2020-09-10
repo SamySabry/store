@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:store/constants.dart';
 import 'package:store/provider/adminMode.dart';
 import 'package:store/provider/modelHud.dart';
-import 'package:store/screens/AdminHome.dart';
+import 'file:///E:/flutterProject/store/lib/screens/admin/AdminHome.dart';
 import 'package:store/screens/HomeScreen.dart';
 import 'package:store/screens/Signupscreen.dart';
 import 'package:store/services/auth.dart';
@@ -157,6 +157,7 @@ class LoginScreen extends StatelessWidget {
           {
             if(_password==adminPassword)
               {
+
                 try {
                   final authResult = await _auth.signIn(_email, _password);
                   modelHud.changeisloading(false);

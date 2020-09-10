@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:store/provider/adminMode.dart';
 import 'package:store/provider/modelHud.dart';
-import 'package:store/screens/AdminHome.dart';
+import 'file:///E:/flutterProject/store/lib/screens/admin/AdminHome.dart';
 import 'package:store/screens/HomeScreen.dart';
 import 'package:store/screens/Loginscreen.dart';
 import 'package:store/screens/Signupscreen.dart';
+import 'package:store/screens/admin/AddProduct.dart';
 
 main()=>runApp(MyApp());
 
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
           SignupScreen.id :(context)=>SignupScreen(),
           HomeScreen.id :(context)=>HomeScreen(),
           AdminHome.id :(context)=>AdminHome(),
+          AddProduct.id :(context)=>AddProduct()
     },
     ),
     );
