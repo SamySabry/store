@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -8,9 +9,14 @@ import 'package:store/screens/HomeScreen.dart';
 import 'package:store/screens/Loginscreen.dart';
 import 'package:store/screens/Signupscreen.dart';
 import 'package:store/screens/admin/AddProduct.dart';
+import 'package:store/screens/admin/ManageProducts.dart';
+import 'package:store/screens/admin/editProduct.dart';
 
-main()=>runApp(MyApp());
-
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
@@ -29,10 +35,12 @@ class MyApp extends StatelessWidget {
           SignupScreen.id :(context)=>SignupScreen(),
           HomeScreen.id :(context)=>HomeScreen(),
           AdminHome.id :(context)=>AdminHome(),
-          AddProduct.id :(context)=>AddProduct()
+          AddProduct.id :(context)=>AddProduct(),
+          ManageProducts.id :(context)=>ManageProducts(),
+          EditProduct.id :(context)=>EditProduct()
     },
     ),
     );
   }
 }
-
+//[cloud_firestore/permission-denied] The caller does not have permission to execute the specified operation.

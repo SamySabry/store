@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:store/constants.dart';
+import 'package:store/screens/admin/ManageProducts.dart';
 
 import 'AddProduct.dart';
 
@@ -31,7 +32,7 @@ class AdminHome extends StatelessWidget
           RaisedButton(
             onPressed: ()
             {
-
+              Navigator.pushNamed(context, ManageProducts.id);
             },
             child: Text(
                 "Edit Product"
